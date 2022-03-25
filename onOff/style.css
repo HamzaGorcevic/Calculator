@@ -1,0 +1,75 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgb(105, 93, 93),rgb(53, 58, 126));
+}
+
+.container{
+    position: relative;
+    padding: 50px;
+    width: 45%;
+    height: 30%;
+    align-items: center;
+    display: flex;
+    background-color: black;
+    border-radius: 120px;
+    border: 1px black solid;
+
+}
+
+
+#tekst,#tekst1{
+    position: absolute;
+    left: 57%;
+    font-size: 170px;
+    color: wheat;
+    font-family: 'Roboto Condensed', sans-serif;
+    transform: scale(0);
+
+}
+#tekst1{
+    transform: scale(1);
+}
+.on{
+    width: 270px;
+    height: 270px;
+    background-color: rgb(16, 16, 221);
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    font-size: 0px;
+    
+}
+
+
+
+@keyframes animacija{
+    0%{margin-left: 0%;}
+    100%{margin-left: 56%;}
+}
+@keyframes animacijaOff{
+    0%{margin-left: 56%;}
+    100%{margin-left: 0%;}
+}
+
+
+@keyframes animacijaT{
+    0%{transform: scale(0);}
+    100%{transform: scale(1);}
+}
+
+@keyframes animacijaF{
+    0%{transform: scale(0);}
+    100%{transform: scale(1);}
+}
+
